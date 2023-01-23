@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  background-position-x: center;
+  font-family: "Poppins", sans-serif;
+  background-image: url("/img/Toxo_BG.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+a:hover{
+  color: #fcc419;
+}
+a:visited{
+  color: white;;
+}
+/* NAVBAR 
+=============================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 20%;
+  align-items: center;
+  z-index: 0;
+  opacity: 1;
+}
+.navbar > div {
+  padding: 0 0px;
+  font-size: 20px;
+}
+.navbar .menu {
+  margin-right: auto;
+}
+.navbar .lang {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* SOCIAL MEDIA 
+=============================== */
+.media ul {
+  position: absolute;
+
+ 
+}
+.media ul li {
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: inline;
+  padding: 0 30px;
+  text-transform: uppercase;
+}
+
+/* TEXT 
+=============================== */
+.text {
+  position: absolute;
+  top: 100px;
+  transform: rotate(-90deg);
+  z-index: -1;
+}
+.text h1 {
+  font-size: 120px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -10px;
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  width: 600px;
+}
+.text h1 .hide--text {
+  position: absolute;
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("img/toxo_vh.png");
+  }
+  .text {
+    margin: 0 10%;
+    top: -100px;
+    padding-bottom: 70vw;
+  }
+  
+  .spotify {
+    width: 100%;
+    height: 10px;
+    position: bottom;
+  }
+
+
+}
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  body {
+    background-image: url("img/toxo_vh.png");
+    background-size: cover;
+  }
+  
+
+
+}
+.text h2 {
+  content: "duality";
+  position: absolute;
+  top: 40px;
+  left: -80px;
+  color: #fcc419;
+  z-index: -1;
+  font-size: 150px;
+  opacity: 1;
+}
+.text h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+  position: relative;
+  overflow: hidden;
+  height: 80px;
+}
+.text h3 .hide--text {
+  position: absolute;
+}
+.text p {
+  color: white;
+  width: 400px;
+  font-size: 12px;
+  margin-top: 0px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+}
+.text p .hide--text {
+  position: absolute;
+}
+
+/* SPONSOR 
+=============================== */
+.sponsor {
+  position: fixed;
+  right: 10px;
+  bottom: 50px;
+  text-align: center;
+}
+.sponsor img {
+  width: 70px;
+  opacity: 1;
+}
+.sponsor p {
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* DISTORTION 
+=============================== */
+.spotify{
+  width: 20%;
+}
+iframe {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+}
+
+/* OVERLAY 
+=============================== */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 99;
+  overflow: hidden;
+}
+.overlay.first {
+  background: #fcc419;
+}
+.overlay.second {
+  background: #fcc419;
+  left: 33.33%;
+}
+.overlay.third {
+  background: #fcc419;
+  left: 66.66%;
+}
